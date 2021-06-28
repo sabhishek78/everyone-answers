@@ -6,7 +6,7 @@ import { signInWithGoogle } from './firebase/firebase.utils';
 import { auth } from './firebase/firebase.utils';
 import logo from './images/emptypp.png';
 import { GoogleLoginButton } from "react-social-login-buttons";
-import TextareaAutosize from "react-autosize-textarea"
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 
 class App extends React.Component {
 
@@ -45,8 +45,11 @@ class App extends React.Component {
                         <h1>My Students</h1>
                         <p>Enter the name of the persons who will answer your questions,separated by comma or new line</p>
                         <TextareaAutosize
-                            rows={10}
-                            placeholder='eg. David, Kim, Rajesh'
+                            rowsMax={4}
+                            aria-label="maximum height"
+                            placeholder="Maximum 4 rows"
+                            defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua."
                         />
                         <div className="submitButton">
                           <button>SUBMIT</button>
