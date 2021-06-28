@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.afterLogin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profilePicture{
+float: right;
+  border-radius: 50%;
+  width: 50px;
+}
+.main{
+  padding: 10px;;
+  width: 1000px;
+  margin: auto;
+}
+.submitButton{
+  margin-top: 10px;
+}
